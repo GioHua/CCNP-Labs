@@ -1,1 +1,65 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #f8f9fa;
+  color: #222;
+  line-height: 1.6;
+}
 
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.thumb {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.tags {
+  margin-top: 1rem;
+}
+
+.tags span {
+  background: #e0e0e0;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-right: 6px;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  body { background: #0f0f0f; color: #eee; }
+  .project-card { background: #1e1e1e; }
+  .tags span { background: #444; }
+}
