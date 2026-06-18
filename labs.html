@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Labs | Your Name</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>My Labs & Projects</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="labs.html">Labs</a>
+    </nav>
+  </header>
+
+  <main>
+    <p id="loading-message">Loading projects...</p>
+    <div id="pdf-list" class="grid"></div>
+  </main>
+
+  <script>
+    fetch("data/labs.json")
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById("loading-message").remove();
+        const list = document.getElementById("pdf-list");
+        
+        data.forEach(item => {
+          const card = document.createElement("div");
+          card.className = "project-card";
+          card.innerHTML = `
+            <img src="${item.thumb}" alt="${item.title}" class="thumb">
+            <h2>${item.title}</h2>
+            <p><strong>${item.author}</strong></p>
+            <p>${item.description}</p>
+            ${item.tags ? `<div class="tags">${item.tags.map(t => `<span>${t}</span>`).join('')}</div>` : ''}
+          `;
+
+          const link = document.createElement("a");
+          link.href = item.file;
+          link.target = "_blank";
+          link.className = "card-link";
+          link.appendChild(card);
+          list.appendChild(link);
+        });
+      })
+      .catch(err => {
+        document.getElementById("loading-message").textContent = "Failed to load projects.";
+      });
+  </script>
+</body>
+</html>
