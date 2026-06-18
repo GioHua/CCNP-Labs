@@ -1,11 +1,58 @@
-
 [
   {
-    "title": "My First Lab",
-    "author": "Your Name",
-    "description": "This is a sample project. Replace me with your real work.",
-    "file": "https://example.com/your-first-lab.pdf",
-    "thumb": "https://via.placeholder.com/600x400?text=Lab+1",
-    "tags": ["Networking", "Linux"]
+    "title": "AI Lab",
+    "author": "Gio Hua",
+    "description": "AI-related networking or automation lab.",
+    "file": "/labs/AI Lab.docx",
+    "thumb": "/assets/thumbs/ai-lab.jpg",
+    "tags": ["AI", "Networking"]
+  },
+  {
+    "title": "AWS Lab Report 1-3",
+    "author": "Gio Hua",
+    "description": "AWS Labs covering topics 1 through 3.",
+    "file": "/labs/AWS Lab Report 1-3.docx",
+    "thumb": "/assets/thumbs/aws1.jpg",
+    "tags": ["AWS", "Cloud"]
+  },
+  {
+    "title": "AWS Lab Report 4-6",
+    "author": "Gio Hua",
+    "description": "AWS Labs covering topics 4 through 6.",
+    "file": "/labs/AWS Lab Report 4-6.docx",
+    "thumb": "/assets/thumbs/aws2.jpg",
+    "tags": ["AWS", "Cloud"]
+  },
+  {
+    "title": "BGP Lab Documentation",
+    "author": "Gio Hua",
+    "description": "BGP configuration and documentation lab.",
+    "file": "/labs/BGP Lab Documentation.docx",
+    "thumb": "/assets/thumbs/bgp.jpg",
+    "tags": ["BGP", "Routing"]
+  },
+  {
+    "title": "Layer 2 Attacks Lab",
+    "author": "Gio Hua",
+    "description": "Layer 2 security attacks and mitigation.",
+    "file": "/labs/Layer 2 Attacks Lab.docx",
+    "thumb": "/assets/thumbs/layer2.jpg",
+    "tags": ["Security", "Layer 2"]
+  },
+  {
+    "title": "OSPF Lab",
+    "author": "Gio Hua",
+    "description": "OSPF configuration and troubleshooting.",
+    "file": "/labs/OSPF Lab.docx",
+    "thumb": "/assets/thumbs/ospf.jpg",
+    "tags": ["OSPF", "Routing"]
+  },
+  {
+    "title": "Windows Installation Lab",
+    "author": "Gio Hua",
+    "description": "Windows server or client installation lab.",
+    "file": "/labs/Windows Installation Lab.docx",
+    "thumb": "/assets/thumbs/windows.jpg",
+    "tags": ["Windows", "Server"]
   }
 ]
