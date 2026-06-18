@@ -1,1 +1,11 @@
 
+[
+  {
+    "title": "My First Lab",
+    "author": "Your Name",
+    "description": "This is a sample project. Replace me with your real work.",
+    "file": "https://example.com/your-first-lab.pdf",
+    "thumb": "https://via.placeholder.com/600x400?text=Lab+1",
+    "tags": ["Networking", "Linux"]
+  }
+]
