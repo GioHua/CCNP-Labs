@@ -1,7 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Labs | Your Name</title>
+  <link rel="stylesheet" href="/CCNP-Labs/assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>My CCNP Labs & Projects</h1>
+    <nav>
+      <a href="/CCNP-Labs/index.html">← Home</a>
+      <a href="/CCNP-Labs/labs.html">Labs</a>
+    </nav>
+  </header>
+
+  <main>
+    <p id="loading-message">Loading projects...</p>
+    <div id="pdf-list" class="grid"></div>
+  </main>
+
   <script>
     fetch("/CCNP-Labs/data/labs.json")
       .then(response => {
-        if (!response.ok) throw new Error("File not found");
+        if (!response.ok) throw new Error("JSON not found");
         return response.json();
       })
       .then(data => {
@@ -13,7 +35,8 @@
           card.className = "project-card";
           
           card.innerHTML = `
-            <img src="${item.thumb}" alt="${item.title}" class="thumb" onerror="this.src='https://via.placeholder.com/600x400?text=No+Image'">
+            <img src="${item.thumb}" alt="${item.title}" class="thumb" 
+                 onerror="this.src='https://via.placeholder.com/600x400?text=${encodeURIComponent(item.title)}'">
             <h2>${item.title}</h2>
             <p><strong>${item.author}</strong></p>
             <p>${item.description}</p>
@@ -31,9 +54,8 @@
       })
       .catch(err => {
         console.error(err);
-        document.getElementById("loading-message").innerHTML = `
-          Failed to load labs.<br>
-          <small>Please check that labs.json exists and refresh the page.</small>
-        `;
+        document.getElementById("loading-message").innerHTML = "Failed to load. Please refresh the page.";
       });
   </script>
+</body>
+</html>
