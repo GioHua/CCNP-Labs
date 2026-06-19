@@ -4,7 +4,7 @@
     "author": "Gio Hua",
     "description": "AI-related networking or automation lab.",
     "file": "/CCNP-Labs/labs/AI Lab.docx",
-    "thumb": "/CCNP-Labs/assets/thumbs/ai-lab.jpg",
+    "thumb": "/CCNP-Labs/assets/thumbs/Local AI.png",
     "tags": ["AI", "Networking"]
   },
   {
@@ -12,7 +12,7 @@
     "author": "Gio Hua",
     "description": "AWS Labs covering topics 1 through 3.",
     "file": "/CCNP-Labs/labs/AWS Lab Report 1-3.docx",
-    "thumb": "/CCNP-Labs/assets/thumbs/aws1.jpg",
+    "thumb": "/CCNP-Labs/assets/thumbs/AWS 1-3.png",
     "tags": ["AWS", "Cloud"]
   },
   {
@@ -20,7 +20,7 @@
     "author": "Gio Hua",
     "description": "AWS Labs covering topics 4 through 6.",
     "file": "/CCNP-Labs/labs/AWS Lab Report 4-6.docx",
-    "thumb": "/CCNP-Labs/assets/thumbs/aws2.jpg",
+    "thumb": "/CCNP-Labs/assets/thumbs/AWS 4-6.png",
     "tags": ["AWS", "Cloud"]
   },
   {
@@ -28,7 +28,7 @@
     "author": "Gio Hua",
     "description": "BGP configuration and documentation lab.",
     "file": "/CCNP-Labs/labs/BGP Lab Documentation.docx",
-    "thumb": "/CCNP-Labs/assets/thumbs/bgp.jpg",
+    "thumb": "/CCNP-Labs/assets/thumbs/BGP.png",
     "tags": ["BGP", "Routing"]
   },
   {
@@ -36,7 +36,7 @@
     "author": "Gio Hua",
     "description": "Layer 2 security attacks and mitigation.",
     "file": "/CCNP-Labs/labs/Layer 2 Attacks Lab.docx",
-    "thumb": "/CCNP-Labs/assets/thumbs/layer2.jpg",
+    "thumb": "/CCNP-Labs/assets/thumbs/Layer 2 Attacks.png",
     "tags": ["Security", "Layer 2"]
   },
   {
@@ -44,7 +44,7 @@
     "author": "Gio Hua",
     "description": "OSPF configuration and troubleshooting.",
     "file": "/CCNP-Labs/labs/OSPF Lab.docx",
-    "thumb": "/CCNP-Labs/assets/thumbs/ospf.jpg",
+    "thumb": "/CCNP-Labs/assets/thumbs/OSPF.png",
     "tags": ["OSPF", "Routing"]
   },
   {
@@ -52,7 +52,7 @@
     "author": "Gio Hua",
     "description": "Windows server or client installation lab.",
     "file": "/CCNP-Labs/labs/Windows Installation Lab.docx",
-    "thumb": "/CCNP-Labs/assets/thumbs/windows.jpg",
+    "thumb": "/CCNP-Labs/assets/thumbs/Windows 11.png",
     "tags": ["Windows", "Server"]
   }
 ]
