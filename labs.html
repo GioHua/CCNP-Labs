@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Labs | Your Name</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="/CCNP-Labs/assets/css/style.css">
 </head>
 <body>
   <header>
-    <h1>My Labs & Projects</h1>
+    <h1>My CCNP Labs & Projects</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="labs.html">Labs</a>
+      <a href="/CCNP-Labs/index.html">Home</a>
+      <a href="/CCNP-Labs/labs.html">Labs</a>
     </nav>
   </header>
 
@@ -21,7 +21,9 @@
   </main>
 
   <script>
-    fetch("data/labs.json")
+    const repo = "/CCNP-Labs";
+    
+    fetch(repo + "/data/labs.json")
       .then(response => response.json())
       .then(data => {
         document.getElementById("loading-message").remove();
@@ -30,6 +32,7 @@
         data.forEach(item => {
           const card = document.createElement("div");
           card.className = "project-card";
+          
           card.innerHTML = `
             <img src="${item.thumb}" alt="${item.title}" class="thumb">
             <h2>${item.title}</h2>
@@ -47,7 +50,8 @@
         });
       })
       .catch(err => {
-        document.getElementById("loading-message").textContent = "Failed to load projects.";
+        document.getElementById("loading-message").textContent = "Failed to load projects. Please refresh.";
+        console.error(err);
       });
   </script>
 </body>
